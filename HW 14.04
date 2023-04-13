@@ -1,0 +1,143 @@
+function setup()
+{
+	//create a canvas for the robot
+	createCanvas(1000, 700);
+}
+
+function draw()
+{
+	strokeWeight(2);
+
+	//robot body 1 - delete this code and make your own robot body
+	fill(200);
+	rect(115, 200, 70, 130);
+	rect(85, 200, 30, 120);
+	rect(185, 200, 30, 120);
+	rect(120, 330, 20, 130);
+	rect(160, 330, 20, 130);
+
+	//robot body 2 - delete this code and make your own robot body
+	rect(375, 200, 150, 130);
+	rect(345, 200, 30, 80);
+	rect(525, 200, 30, 80);
+	rect(390, 330, 50, 110);
+	rect(460, 330, 50, 110);
+
+
+	//robot body 3 - delete this code and make your own robot body
+	rect(730, 200, 40, 130);
+	rect(715, 200, 15, 250);
+	rect(770, 200, 15, 250);
+	rect(735, 330, 8, 250);
+	rect(757, 330, 8, 250);
+
+
+	// !!! Draw the robot heads - You shouldn't need to change this code !!!
+
+	//robot head 1
+	fill(200);
+	rect(110, 120, 80, 80, 10);
+    //robot head 2
+	rect(375, 130, 150, 70, 10);
+    //robot head 3
+	rect(730, 80, 40, 120, 10);
+
+	//ears
+	fill(225, 0, 0);
+
+	//robot ears 1
+	rect(80, 135, 30, 55);
+	rect(190, 135, 30, 55);
+
+	//robot ears 2
+	rect(365, 135, 10, 65);
+	rect(525, 135, 10, 65);
+
+	//robot ears 3
+	rect(720, 110, 10, 10);
+	rect(770, 110, 10, 10);
+
+
+
+	//robots' antennas
+	fill(250, 250, 0);
+    // robot antenna 1
+	ellipse(150, 105, 10, 10);
+    // robot antenna 1
+	ellipse(450, 118, 25, 10);
+    // robot antenna 1
+	ellipse(750, 68, 5, 10);
+
+    //robots' antennas
+	fill(200, 0, 200);
+    // robot antenna 1
+	rect(140, 110, 20, 10);
+    // robot antenna 2
+	rect(430, 119, 40, 10);
+    // robot antenna 3
+	rect(745, 70, 10, 10);
+
+
+	//robot 1's eyes
+	fill(255);
+	ellipse(125, 140, 21, 21);
+	point(125, 140);
+	ellipse(175, 140, 21, 21);
+	point(175, 140);
+
+	//robot 2's eyes
+	ellipse(405, 145, 51, 21);
+	point(405, 145);
+	ellipse(495, 145, 51, 21);
+	point(495, 145);
+
+	//robot 3's eyes
+	ellipse(740, 130, 11, 11);
+	point(740, 130);
+	ellipse(760, 130, 11, 11);
+	point(760, 130);
+
+
+	//robots' noses
+	fill(255, 0, 0);
+    //robot 1 nose
+	triangle(150, 135, 135, 160, 165, 160);
+    //robot 2 nose
+	triangle(450, 135, 435, 170, 465, 170);
+    //robot 3 nose
+	triangle(750, 145, 745, 155, 755, 155);
+
+	//robot 1 mouth
+	noFill();
+	beginShape();
+	vertex(128, 175);
+	vertex(136, 185);
+	vertex(142, 175);
+	vertex(150, 185);
+	vertex(158, 175);
+	vertex(166, 185);
+	vertex(174, 175);
+	endShape();
+
+	//robot 2 mouth
+	beginShape();
+	vertex(388, 175);
+	vertex(409, 185);
+	vertex(430, 175);
+	vertex(451, 185);
+	vertex(472, 175);
+	vertex(493, 185);
+	vertex(514, 175);
+	endShape();
+
+	//robot 3 mouth
+	beginShape();
+	vertex(733, 175);
+	vertex(739, 185);
+	vertex(745, 175);
+	vertex(751, 185);
+	vertex(757, 175);
+	vertex(763, 185);
+	vertex(769, 175);
+	endShape();
+}
